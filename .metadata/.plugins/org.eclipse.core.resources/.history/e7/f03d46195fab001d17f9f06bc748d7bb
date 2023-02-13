@@ -1,0 +1,138 @@
+Waits in Selenium, how do you handle synchronization in selnium
+need of waits in selenium
+
+
+our script will be very fast, but the application pr the Ui on whcih we will working on
+will be slow when compared to Ui or the application. 
+
+
+driver.finElement(By.xpath("xpath")).click();  // open a new page
+//wait
+driver.finElement(By.xpath("xpath")).click();  // on new page i need to click
+
+
+
+4types of waits
+have different functions
+
+1. Implicit wait
+2.Explicit wait
+3.fluent wait
+4. static wait.
+
+Impicit wait:- is also called as global wait,
+The Implicit Wait in Selenium is used to tell the web driver to wait for a 
+certain amount of time before it throws a “No Such Element Exception”. 
+The default setting is 0. Once we set the time, the web driver will 
+wait for the element for that time before throwing an exception.
+
+
+Implicit wait will accept 2 parameters, the first parameter will accept the time 
+as an integer value and the second parameter will accept the time measurement in 
+terms of SECONDS, MINUTES, MILISECOND, MICROSECONDS, NANOSECONDS, DAYS, HOURS, etc.
+
+
+
+Explicit wait:-
+The Explicit Wait in Selenium is used to tell the Web Driver to wait for certain conditions 
+(Expected Conditions) or maximum time exceeded before throwing “ElementNotVisibleException”
+ exception. It is an intelligent kind of wait, but it can be applied only for specified elements.
+  It gives better options than implicit wait as it waits for
+
+
+The NoSuchElementException is an unchecked exception in Java that can be thrown 
+by various accessor methods to indicate that the element being requested does not exist.
+element not being present on the ui or xpath issue
+
+ElementNotVisibleException
+Thrown to indicate that although an element is present on the DOM, 
+it is not visible, and so is not able to be interacted with.
+it might be below the screen  i.e you need to perfrom a scroll 
+
+alertIsPresent()
+elementSelectionStateToBe()
+elementToBeClickable()
+elementToBeSelected()
+frameToBeAvaliableAndSwitchToIt()
+invisibilityOfTheElementLocated()
+invisibilityOfElementWithText()
+presenceOfAllElementsLocatedBy()
+presenceOfElementLocated()
+textToBePresentInElement()
+textToBePresentInElementLocated()
+
+
+20sec 
+
+10sec
+
+elementToBeClickable();
+20 sec 
+19 sec  1sec
+
+
+
+
+
+
+
+
+implicit wait :- max 25 sec
+
+driver.findElennet();
+driver.findElennet();
+total time taken  25 sec
+
+max time limit is 22sec
+23sec 
+//explicit wait vondition for this 89 line
+driver.findElennet().clcik();
+driver.findElennet();
+
+total time taken 10 
+
+
+implicitly wait 20sec
+explicit wait of 10sec
+element to be clickable 98
+driver.findElennet().click();
+driver.findElennet();
+
+19sec
+20sec
+clcick
+
+
+20sec 
+
+fluent explicit wait
+20sec 2sec
+10 times 20sec
+
+Fluent Wait in Selenium marks the maximum amount of time for Selenium WebDriver
+ to wait for a certain condition (web element) becomes visible. It also defines how 
+ frequently WebDriver will check if the condition appears before throwing the 
+ “ElementNotVisibleException”.
+
+Wait wait = new FluentWait(driver)
+.withTimeout(20, SECONDS)
+.pollingEvery(2, SECONDS)
+.ignoring(Exception.class);
+
+
+
+
+static wait:-
+
+Thread.sleep(1000);
+
+
+
+
+
+
+Locators in selenium
+Types of xpath
+methods in webdriver
+waits in selenium
+

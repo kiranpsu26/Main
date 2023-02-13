@@ -1,0 +1,28 @@
+package test;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map.Entry;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		LinkedHashMap<String, Integer> studentMarks = new LinkedHashMap<String, Integer>();
+		studentMarks.put("abc", 20);
+		studentMarks.put("abc", 22);
+		studentMarks.put("xyz", 20);
+		studentMarks.put("zqa", 20);
+		studentMarks.put("abc", 30);
+		studentMarks.put("1abc1", 22);
+		System.out.println(studentMarks);
+		Iterator<Entry<String, Integer>> iterator = studentMarks.entrySet().iterator();
+		while (iterator.hasNext()) {
+			Entry<String, Integer> next = iterator.next();
+			System.out.println(next.getValue());
+			System.out.println(next.getKey());
+		}
+
+	}
+
+}

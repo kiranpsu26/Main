@@ -1,0 +1,21 @@
+package test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ProvideLoan {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Mohammed Akheeb\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.amaozon.com/");
+		driver.manage().window().maximize();
+		String s = driver.getCurrentUrl();
+		System.out.println(s);
+		
+		
+
+	}
+}

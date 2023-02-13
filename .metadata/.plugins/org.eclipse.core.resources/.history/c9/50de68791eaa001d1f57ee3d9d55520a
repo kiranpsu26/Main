@@ -1,0 +1,24 @@
+package Selenium.Test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ItemPage {
+
+	static WebDriver driver = Base.getDriver();
+	
+	public static WebElement getItemSizeEle() {
+		return driver.findElement(By.xpath("//span[@class='G6XhRU']/following-sibling::span"));
+	}
+	
+	public static WebElement getItemNameEle() {
+		return driver.findElement(By.xpath("//span[@class='G6XhRU']/following-sibling::span"));
+	}
+	
+	public static WebElement getItemPriceEle() {
+		return driver.findElement(By.xpath("(//div[@class='_25b18c']/div)[1]"));
+	}
+
+	
+}

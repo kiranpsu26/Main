@@ -1,0 +1,17 @@
+package Selenium_Test.Selenium;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+final public class App {
+
+	public static void main(String[] args) {
+
+		LinkedList<Object> al = new LinkedList<>();
+		al.add(12);
+		al.add(88);
+		al.add(15);
+		al.add(15);
+		System.out.println(al);
+	}
+}

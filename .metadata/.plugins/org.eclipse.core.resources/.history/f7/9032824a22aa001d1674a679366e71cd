@@ -1,0 +1,12 @@
+package OtherTestCases;
+
+import org.testng.annotations.Test;
+
+public class OtherTestCases {
+
+	@Test
+	public void test2() {
+		String myCurrentDir = System.getProperty("user.dir");
+		System.out.println(myCurrentDir);
+	}
+}

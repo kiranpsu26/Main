@@ -1,0 +1,10 @@
+package Selenium.Test;
+
+import org.openqa.selenium.WebDriver;
+
+public class Operation {
+	WebDriver driver = Base.getDriver();
+	
+	public void perform
+
+}

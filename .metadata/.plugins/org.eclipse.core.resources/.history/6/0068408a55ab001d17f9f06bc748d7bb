@@ -1,0 +1,10 @@
+package test;
+
+public class ProvideLoan {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Mohammed Akheeb\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
+	}
+}

@@ -1,0 +1,29 @@
+package test;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		TreeMap<String, Integer> studentMarks = new TreeMap<String, Integer>();
+		studentMarks.put("bbb", 20);
+		studentMarks.put("ccc", 22);
+		studentMarks.put("aaa", 20);
+		studentMarks.put("mmm", 20);
+		studentMarks.put("zzz", 30);
+		studentMarks.put("ppp", 22);
+		System.out.println(studentMarks);
+		Iterator<Entry<String, Integer>> iterator = studentMarks.entrySet().iterator();
+		while (iterator.hasNext()) {
+			Entry<String, Integer> next = iterator.next();
+			System.out.println(next.getValue());
+			System.out.println(next.getKey());
+		}
+
+	}
+
+}

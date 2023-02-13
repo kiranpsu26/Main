@@ -1,0 +1,47 @@
+package Selenium.Test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class App {
+	static WebDriver driver = null;
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Mohammed Akheeb\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
+		// to click escape button as we are getting the login pop up
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).build().perform();
+		hoverAnElement(driver.findElement(By.xpath("//div[text()='Fashion']")));
+		hoverAnElement(driver.findElement(By.xpath("//a[text()='Kids']")));
+		hoverAnElement(driver.findElement(By.xpath("//a[text()='Boys & Girls Jeans']")));
+		clickOnEle(driver.findElement(By.xpath("//a[text()='Boys & Girls Jeans']")));
+		clickOnEle(driver.findElement(By.xpath("//div[text()='Price -- Low to High']")));
+		clickOnEle(driver.findElement(By.xpath("(//img[@class=\"_2r_T1I\"])[1]")));
+		String itemName = getEleText(driver.findElement(By.xpath("//span[@class='G6XhRU']/following-sibling::span")));
+		String itemPrice = getEleText(driver.findElement(By.xpath("(//div[@class='_25b18c']/div)[1]")));
+		
+		
+		
+	}
+
+	public static void hoverAnElement(WebElement ele) {
+		Actions action = new Actions(driver);
+		action.moveToElement(ele).build().perform();
+	}
+	public static void clickOnEle(WebElement ele) {
+		ele.click();
+	}
+	
+	public static String getEleText(WebElement ele) {
+		String text = ele.getText();
+		return text;
+		
+	}
+}

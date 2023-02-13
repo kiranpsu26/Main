@@ -1,0 +1,8 @@
+package Selenium.Test;
+
+public class HomePage extends App{
+
+	public Login(WebDriver driver){
+		this.driver=driver;
+	}
+}

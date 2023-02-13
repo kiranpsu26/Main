@@ -1,0 +1,11 @@
+package test;
+
+public class ProvideLoan {
+	
+	abstract void provideLoan();
+	
+	public void DisplayBanner() {
+		System.out.println("we might expect providing loan functionality in future.");
+	}
+	
+}

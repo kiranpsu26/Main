@@ -1,0 +1,13 @@
+package Selenium.Test;
+
+import org.openqa.selenium.WebDriver;
+
+public class Util {
+
+	WebDriver driver = Base.getDriver();
+	
+	public void perfromEscButton() {
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package test;
+
+import java.util.HashMap;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		HashMap<String, Integer> studentMarks = new HashMap<String, Integer>();
+		studentMarks.put("abc", 20);
+		studentMarks.put("abc", 22);
+		studentMarks.put("xyz", 20);
+		System.out.println(studentMarks);
+
+	}
+
+}

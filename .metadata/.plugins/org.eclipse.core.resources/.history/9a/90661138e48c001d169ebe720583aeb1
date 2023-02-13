@@ -1,0 +1,12 @@
+package Selenium_idle.Selenium_idle;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+
+public class Mobile {
+
+	void method1()   {
+	       
+    }
+}

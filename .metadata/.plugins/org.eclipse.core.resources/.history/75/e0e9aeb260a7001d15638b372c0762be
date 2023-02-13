@@ -1,0 +1,16 @@
+package test;
+
+import java.util.HashMap;
+import java.util.Hashtable;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		String s = "apple is a fruit";
+		// a-1 p-2 l-1 e-1
+
+		Hashtable<Character, Integer> hm = new Hashtable<Character, Integer>();
+		HashMap<Character, Integer> hm1 = new HashMap<Character, Integer>();
+	}
+
+}

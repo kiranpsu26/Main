@@ -1,0 +1,14 @@
+package Selenium_Test.Selenium;
+
+import java.util.ArrayList;
+
+final public class App {
+
+	public static void main(String[] args) {
+
+		ArrayList<Object> al = new ArrayList<>();
+		al.add(12);
+		al.add(0, 15);
+		System.out.println(al);
+	}
+}

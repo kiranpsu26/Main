@@ -1,0 +1,12 @@
+package Selenium.Test;
+
+import org.openqa.selenium.WebDriver;
+
+public class Base {
+	
+	public WebDriver driver;
+	Base(){
+		
+	}
+
+}

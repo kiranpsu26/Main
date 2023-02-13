@@ -1,0 +1,10 @@
+package Selenium.Test;
+
+import org.openqa.selenium.WebDriver;
+
+public class HomePage extends App{
+
+	public HomePage(WebDriver driver){
+		this.driver=driver;
+	}
+}

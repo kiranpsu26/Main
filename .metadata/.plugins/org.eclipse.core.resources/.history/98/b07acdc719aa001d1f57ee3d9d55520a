@@ -1,0 +1,15 @@
+package Selenium.Test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePage extends App {
+	final WebDriver driver1;
+	public HomePage(WebDriver driver) {
+		this.driver1 = driver;
+	}
+
+	@FindBy(xpath = "//div[text()='Fashion']")
+	WebElement fasion;
+}
